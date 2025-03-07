@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 
 // Sample data would be loaded here - not included in the code
 // as you mentioned it's understood
-const products = require('./data.json');
+const products = require('./db.json');
 
 app.use(express.json());
 
