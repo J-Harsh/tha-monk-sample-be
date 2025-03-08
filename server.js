@@ -2,10 +2,11 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
-
+const cors = require('cors');
 // Load data from db.json
 const products = require('./db.json');
 
+app.use(cors());
 app.use(express.json());
 
 // Single route that handles both listing all products and searching
